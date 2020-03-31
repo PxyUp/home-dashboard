@@ -2,9 +2,6 @@ const ws = require('ws');
 
 export class WebSocket {
     private _ws =  new ws.Server({ port: 10002 });
-    constructor() {
-
-    }
 
     send(schedulerId: string, value: string) {
         this._ws.clients.forEach((client) => {
@@ -15,6 +12,6 @@ export class WebSocket {
                 schedulerId,
                 value
             })))
-    })
+        })
     }
 }
