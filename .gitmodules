@@ -1,0 +1,3 @@
+[submodule "proto/squzy-proto"]
+	path = proto/squzy-proto
+	url = git@github.com:squzy/squzy_proto.git
